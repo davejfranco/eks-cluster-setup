@@ -53,7 +53,7 @@ module "eks" {
   subnet_ids = module.vpc.public_subnets
 
   # aws-auth configmap
-  manage_aws_auth_configmap = true
+  manage_aws_auth_configmap = false
 
   eks_managed_node_groups = {
     internal = {
@@ -61,7 +61,7 @@ module "eks" {
       use_name_prefix = true
       instance_types  = ["t3.medium"]
       min_size        = 1
-      max_size        = 2
+      max_size        = 1
       desired_size    = 1
 
       update_config = {
