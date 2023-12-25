@@ -44,6 +44,6 @@ resource "aws_iam_policy" "external-secrets" {
 
 resource "aws_iam_role" "external-secrets" {
   count              = var.external_secrets_enabled ? 1 : 0
-  name               = "${local.cluster.name}-external-secrets-role"
+  name               = "ExternalSecretsRole"
   assume_role_policy = data.aws_iam_policy_document.oidc_assume_role_external_secrets.json
 }
