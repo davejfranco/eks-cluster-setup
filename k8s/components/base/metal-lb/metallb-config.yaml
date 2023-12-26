@@ -5,6 +5,7 @@ metadata:
   namespace: metallb-system
 spec:
   addresses:
+    #this network is from the docker network -- docker network inspect -f '{{.IPAM.Config}}' kind 
   - 172.18.255.200-172.18.255.250
 ---
 apiVersion: metallb.io/v1beta1
