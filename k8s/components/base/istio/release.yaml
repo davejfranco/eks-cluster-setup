@@ -8,7 +8,7 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: istio/base
+      chart: base
       sourceRef:
         kind: HelmRepository
         name: istio
@@ -28,7 +28,7 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: istio/istiod
+      chart: istiod
       sourceRef:
         kind: HelmRepository
         name: istio
@@ -48,7 +48,7 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: istio/gateway
+      chart: gateway
       sourceRef:
         kind: HelmRepository
         name: istio
