@@ -9,6 +9,7 @@ spec:
   chart:
     spec:
       chart: base
+      version: '1.20.1'
       sourceRef:
         kind: HelmRepository
         name: istio
@@ -29,6 +30,7 @@ spec:
   chart:
     spec:
       chart: istiod
+      version: '1.20.1'
       sourceRef:
         kind: HelmRepository
         name: istio
@@ -49,6 +51,7 @@ spec:
   chart:
     spec:
       chart: gateway
+      version: '1.20.1'
       sourceRef:
         kind: HelmRepository
         name: istio
